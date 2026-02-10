@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LD Mechanic | Luxury Auto Service</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="wrench"></i> LD <span>Mobile Mechanic</span>
+            </a>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home"
+        style="background-image: url('assets/img/hero-bg.png'); height: 100vh; display: flex; align-items: center; position: relative;">
+        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <span
+                style="color: var(--primary-color); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 20px;">Premium
+                Auto Care</span>
+            <h1>Driven to Keep <br><span class="text-gradient">You Moving.</span></h1>
+            <p>Comprehensive diagnostics and both light and heavy mechanical repairs, offering our services at your
+                convenience. We come to you or you come to us.</p>
+            <div style="display: flex; gap: 20px;">
+                <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+                <a href="services.html" class="btn btn-outline">Explore Services</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Urgent Services</p>
+                </div>
+                <div class="stat-item">
+                    <h3>7am-10pm</h3>
+                    <p>Mon - Sat</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#features" class="scroll-down">
+            <i data-lucide="chevron-down"></i>
+        </a>
+    </header>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 60px;" data-aos="fade-up">
+                <h2 style="font-size: 2.5rem; margin-bottom: 15px;">Why Choose <span class="text-gradient">LD
+                        Mechanic?</span></h2>
+                <p style="color: var(--muted-color);">We combine dealership-quality tools with the convenience of mobile
+                    service.</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=800&auto=format&fit=crop"
+                        alt="Convenience"
+                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+                    <div class="card-icon"><i data-lucide="map-pin"></i></div>
+                    <h3>Convenience at Your Location</h3>
+                    <p>No need to tow your car to a workshop! We come to you at home, work, or roadside, saving you time
+                        and hassle.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/img/repairs.jpg" alt="Fast Response"
+                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+                    <div class="card-icon"><i data-lucide="clock"></i></div>
+                    <h3>Fast & Professional</h3>
+                    <p>We diagnose and fix most issues on the spot with high-quality tools and expertise. 24hrs urgent
+                        services available.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1549480119-09f1d86d6342?q=80&w=800&auto=format&fit=crop"
+                        alt="Affordable"
+                        style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
+                    <div class="card-icon"><i data-lucide="dollar-sign"></i></div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Transparent, competitive rates with no hidden costs. We provide clear quotes before starting any
+                        work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section" style="background: var(--secondary-color);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;" data-aos="fade-up">
+                <h2 style="font-size: 2.5rem; margin-bottom: 15px;">How It <span class="text-gradient">Works</span></h2>
+                <p style="color: var(--muted-color);">Simple, transparent, and hassle-free service.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-item" data-aos="fade-right">
+                    <div class="process-number">01</div>
+                    <h3>Book Online</h3>
+                    <p>Select your service and preferred time using our easy online booking system or give us a call.
+                    </p>
+                </div>
+                <div class="process-item" data-aos="fade-up">
+                    <div class="process-number">02</div>
+                    <h3>We Come to You</h3>
+                    <p>Our fully equipped mobile unit arrives at your home, office, or breakdown location.</p>
+                </div>
+                <div class="process-item" data-aos="fade-left">
+                    <div class="process-number">03</div>
+                    <h3>Drive Away</h3>
+                    <p>We complete the job, provide a detailed report, and get you back on the road safely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <p style="color: var(--muted-color); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 40px;"
+                data-aos="fade-in">We Service All Major Brands</p>
+            <div class="brands-grid" data-aos="zoom-in">
+                <span>Toyota</span>
+                <span>Honda</span>
+                <span>Mazda</span>
+                <span>Hyundai</span>
+                <span>Kia</span>
+                <span>Ford</span>
+                <span>BMW</span>
+                <span>Mercedes</span>
+                <span>Audi</span>
+                <span>Volkswagen</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--secondary-color);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;" data-aos="fade-up">
+                <h2 style="font-size: 2.5rem;">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            </div>
+
+            <div class="faq-grid" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Do you charge a call-out fee?</h4>
+                    <p>Our call-out fee is waived if you proceed with the repair or service. For diagnostics only, a
+                        standard fee applies.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <h4>What areas do you cover?</h4>
+                    <p>We primarily serve Mount Druitt, Rooty Hill, St Marys, and the greater Western Sydney region.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Do you offer a warranty?</h4>
+                    <p>Yes! All our workmanship is backed by a 12-month/20,000km warranty for your peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(to right, #18181b, #000);">
+        <div class="container"
+            style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;"
+            data-aos="fade-up">
+            <div style="max-width: 600px;">
+                <h2 style="font-size: 2rem; margin-bottom: 15px;">Need Urgent Assistance?</h2>
+                <p style="color: var(--muted-color); margin-bottom: 0;">Our emergency breakdown team is ready to help
+                    get you back on the road.</p>
+            </div>
+            <a href="tel:0435868891" class="btn btn-primary" style="display: flex; align-items: center; gap: 10px;">
+                <i data-lucide="phone"></i> Call 0435 868 891
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>LD Mobile Mechanic</h4>
+                    <p style="color: var(--muted-color); margin-bottom: 20px;">Driven to keep you moving. Reliable
+                        mobile mechanic and workshop services in Mount Druitt and Western Sydney.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Logbook Service</a></li>
+                        <li><a href="services.html">Diagnostics</a></li>
+                        <li><a href="services.html">Brake Repairs</a></li>
+                        <li><a href="services.html">Emergency Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li style="display: flex; gap: 10px; color: var(--muted-color);"><i data-lucide="map-pin"
+                                style="color: var(--primary-color);"></i> 2/9 Stout Rd, Mount Druitt NSW 2770</li>
+                        <li style="display: flex; gap: 10px; color: var(--muted-color);"><i data-lucide="phone"
+                                style="color: var(--primary-color);"></i> 0435 868 891</li>
+                        <li style="display: flex; gap: 10px; color: var(--muted-color);"><i data-lucide="mail"
+                                style="color: var(--primary-color);"></i> ldmechanic.au@gmail.com</li>
+                        <li style="display: flex; gap: 10px; color: var(--muted-color);"><i data-lucide="clock"
+                                style="color: var(--primary-color);"></i> Mon-Sat: 7am - 10pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 LD Mobile Mechanic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

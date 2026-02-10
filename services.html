@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | LD Mechanic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Nav (Same as Index) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="wrench"></i> LD <span>Mechanic</span>
+            </a>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="section"
+        style="background: url('assets/img/service-bg.png') no-repeat center center/cover; padding-top: 150px; padding-bottom: 60px; position: relative;">
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(9,9,11,0.9), rgba(9,9,11,0.8));">
+        </div>
+        <div class="container" style="position: relative; z-index: 2; text-align: center;" data-aos="fade-down">
+            <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Our <span class="text-gradient">Services</span></h1>
+            <p style="color: var(--muted-color); font-size: 1.25rem; max-width: 600px; margin: 0 auto;">Comprehensive
+                automotive care for all makes and models. From quick fixes to complete overhauls.</p>
+        </div>
+    </div>
+
+    <!-- Stats/Service Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+
+                <!-- Service 1: Engine -->
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=800&auto=format&fit=crop"
+                        alt="Engine Diagnostics"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; opacity: 0.8;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3>Engine Diagnostics & Repairs</h3>
+                        <i data-lucide="activity" style="color: var(--primary-color);"></i>
+                    </div>
+                    <p style="margin-bottom: 20px;">Using advanced tools to pinpoint engine issues quickly. check engine
+                        lights, misfiring, or overheating.</p>
+                    <ul style="list-style: none; color: var(--muted-color); margin-bottom: 20px;">
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Computerized Diagnostics</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Fuel System Repairs</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Overheating Solutions</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-outline" style="width: 100%;">Book Service</a>
+                </div>
+
+                <!-- Service 2: Transmission -->
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1632823471442-fb2bbd87635c?q=80&w=800&auto=format&fit=crop"
+                        alt="Transmission"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; opacity: 0.8;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3>Transmission Servicing</h3>
+                        <i data-lucide="settings" style="color: var(--primary-color);"></i>
+                    </div>
+                    <p style="margin-bottom: 20px;">Extending the lifespan of your vehicle’s transmission system with
+                        professional servicing.</p>
+                    <ul style="list-style: none; color: var(--muted-color); margin-bottom: 20px;">
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Fluid & Filter Change</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Clutch Inspections</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Leak Detection</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-outline" style="width: 100%;">Book Service</a>
+                </div>
+
+                <!-- Service 3: Brakes -->
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/img/repairs.jpg" alt="Brakes"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; opacity: 0.8;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3>Brake System Maintenance</h3>
+                        <i data-lucide="disc-2" style="color: var(--primary-color);"></i>
+                    </div>
+                    <p style="margin-bottom: 20px;">Ensuring your safety with comprehensive brake inspections and
+                        repairs.</p>
+                    <ul style="list-style: none; color: var(--muted-color); margin-bottom: 20px;">
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Pads & Rotor Replacement</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Fluid Flush</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> ABS Diagnostics</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-outline" style="width: 100%;">Book Service</a>
+                </div>
+
+                <!-- Service 4: Electrical -->
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1549480119-09f1d86d6342?q=80&w=800&auto=format&fit=crop"
+                        alt="Electrical"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; opacity: 0.8;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3>Electrical Troubleshooting</h3>
+                        <i data-lucide="zap" style="color: var(--primary-color);"></i>
+                    </div>
+                    <p style="margin-bottom: 20px;">Diagnosing battery issues, faulty wiring, or malfunctioning lights.
+                    </p>
+                    <ul style="list-style: none; color: var(--muted-color); margin-bottom: 20px;">
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Battery Testing</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Alternator Repairs</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> ECU Diagnostics</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-outline" style="width: 100%;">Book Service</a>
+                </div>
+
+                <!-- Service 5: Suspension -->
+                <div class="card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=800&auto=format&fit=crop"
+                        alt="Suspension"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; opacity: 0.8;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3>Suspension Work</h3>
+                        <i data-lucide="move" style="color: var(--primary-color);"></i>
+                    </div>
+                    <p style="margin-bottom: 20px;">For a smoother ride and better handling. Fixing rough rides or
+                        uneven tire wear.</p>
+                    <ul style="list-style: none; color: var(--muted-color); margin-bottom: 20px;">
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Shock Absorbers</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Control Arms</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Steering Inspections</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-outline" style="width: 100%;">Book Service</a>
+                </div>
+
+                <!-- Service 6: AC -->
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=800&auto=format&fit=crop"
+                        alt="Air Con"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; opacity: 0.8;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3>Air Conditioning</h3>
+                        <i data-lucide="wind" style="color: var(--primary-color);"></i>
+                    </div>
+                    <p style="margin-bottom: 20px;">Stay cool and comfortable with expert AC services and leak
+                        detection.</p>
+                    <ul style="list-style: none; color: var(--muted-color); margin-bottom: 20px;">
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Gas Refill</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Leak Detection</li>
+                        <li style="margin-bottom: 5px; display: flex; align-items: center; gap: 8px;"><i
+                                data-lucide="check" size="16"></i> Cabin Air Filters</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-outline" style="width: 100%;">Book Service</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Index) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>LD Mechanic</h4>
+                    <p style="color: var(--muted-color); margin-bottom: 20px;">Driven to keep you moving. Reliable
+                        mobile mechanic and workshop services in Mount Druitt.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <!-- ... shorter footer for subpages ... -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li style="display: flex; gap: 10px; color: var(--muted-color);"><i data-lucide="map-pin"
+                                style="color: var(--primary-color);"></i> 2/9 Stout Rd, Mount Druitt</li>
+                        <li style="display: flex; gap: 10px; color: var(--muted-color);"><i data-lucide="phone"
+                                style="color: var(--primary-color);"></i> 0435 868 891</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 LD Mechanic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

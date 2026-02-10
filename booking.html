@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Service | LD Mechanic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="wrench"></i> LD <span>Mechanic</span>
+            </a>
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Section -->
+    <div class="section"
+        style="padding-top: 120px; background: radial-gradient(circle at top right, #1e1b4b, #09090b);">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; gap: 50px;">
+
+                <!-- Left Side: Info -->
+                <div style="flex: 1; min-width: 300px;" data-aos="fade-right">
+                    <h1 style="font-size: 3rem; margin-bottom: 20px;">Schedule Your <br><span
+                            class="text-gradient">Service Today</span></h1>
+                    <p style="color: var(--muted-color); font-size: 1.1rem; margin-bottom: 40px;">Simple online booking.
+                        Choose your service, pick a date, and we'll handle the rest. We come to you or you come to us.
+                    </p>
+
+                    <div style="margin-bottom: 40px;">
+                        <div style="display: flex; gap: 20px; margin-bottom: 25px;">
+                            <div
+                                style="width: 50px; height: 50px; background: rgba(225,29,72,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color);">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4>Service Area</h4>
+                                <p style="color: var(--muted-color);">Mount Druitt, Rooty Hill, St Marys, and
+                                    surrounding Western Sydney suburbs.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 20px; margin-bottom: 25px;">
+                            <div
+                                style="width: 50px; height: 50px; background: rgba(225,29,72,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color);">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p style="color: var(--muted-color);">Monday - Saturday: 7:00 AM - 10:00 PM<br>Sunday:
+                                    Emergency Only</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 20px;">
+                            <div
+                                style="width: 50px; height: 50px; background: rgba(225,29,72,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color);">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4>Direct Line</h4>
+                                <p style="color: var(--muted-color); font-weight: bold; color: white;">0435 868 891</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Form -->
+                <div style="flex: 1; min-width: 300px;" data-aos="fade-left">
+                    <form id="contact-form"
+                        style="background: var(--secondary-color); padding: 40px; border-radius: var(--radius); border: 1px solid var(--glass-border);">
+                        <h3 style="margin-bottom: 30px;">Request Appointment</h3>
+
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Full Name</label>
+                            <input type="text" placeholder="John Doe" required
+                                style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #3f3f46; background: #18181b; color: white;">
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                            <div>
+                                <label style="display: block; margin-bottom: 8px; font-weight: 500;">Phone</label>
+                                <input type="tel" placeholder="0400 000 000" required
+                                    style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #3f3f46; background: #18181b; color: white;">
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 8px; font-weight: 500;">Email</label>
+                                <input type="email" placeholder="john@example.com" required
+                                    style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #3f3f46; background: #18181b; color: white;">
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Service Type</label>
+                            <select
+                                style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #3f3f46; background: #18181b; color: white;">
+                                <option>Engine Diagnostics</option>
+                                <option>Transmission Service</option>
+                                <option>Brake Repairs</option>
+                                <option>Electrical Issue</option>
+                                <option>Suspension Work</option>
+                                <option>Air Conditioning</option>
+                                <option>Logbook Service</option>
+                                <option>Emergency Breakdown</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Date Preference</label>
+                            <input type="date"
+                                style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #3f3f46; background: #18181b; color: white; color-scheme: dark;">
+                        </div>
+
+                        <div style="margin-bottom: 30px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Vehicle Details /
+                                Issues</label>
+                            <textarea placeholder="e.g. 2018 Toyota Camry. Hearing a noise when braking..." rows="4"
+                                style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #3f3f46; background: #18181b; color: white; resize: vertical;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; border: none; font-size: 1rem;">Confirm Request</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>LD Mobile Mechanic</h4>
+                    <p style="color: var(--muted-color); margin-bottom: 20px;">Driven to keep you moving. Reliable
+                        mobile mechanic and workshop services in Mount Druitt and Western Sydney.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Logbook Service</a></li>
+                        <li><a href="services.html">Diagnostics</a></li>
+                        <li><a href="services.html">Brake Repairs</a></li>
+                        <li><a href="services.html">Emergency Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li style="display: flex; gap: 10px; color: var(--muted-color);"><i data-lucide="map-pin"
+                                style="color: var(--primary-color);"></i> 2/9 Stout Rd, Mount Druitt NSW 2770</li>
+                        <li style="display: flex; gap: 10px; color: var(--muted-color);"><i data-lucide="phone"
+                                style="color: var(--primary-color);"></i> 0435 868 891</li>
+                        <li style="display: flex; gap: 10px; color: var(--muted-color);"><i data-lucide="mail"
+                                style="color: var(--primary-color);"></i> ldmechanic.au@gmail.com</li>
+                        <li style="display: flex; gap: 10px; color: var(--muted-color);"><i data-lucide="clock"
+                                style="color: var(--primary-color);"></i> Mon-Sat: 7am - 10pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 LD Mobile Mechanic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
