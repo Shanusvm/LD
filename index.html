@@ -36,32 +36,67 @@
     </nav>
 
     <!-- Hero Section -->
+    <!-- Hero Section -->
     <header class="hero" id="home"
-        style="background-image: url('assets/img/hero-bg.png'); height: 100vh; display: flex; align-items: center; position: relative;">
-        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
-            <span
-                style="color: var(--primary-color); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 20px;">Premium
-                Auto Care</span>
-            <h1>Driven to Keep <br><span class="text-gradient">You Moving.</span></h1>
-            <p>Comprehensive diagnostics and both light and heavy mechanical repairs, offering our services at your
-                convenience. We come to you or you come to us.</p>
-            <div style="display: flex; gap: 20px;">
-                <a href="booking.html" class="btn btn-primary">Book Appointment</a>
-                <a href="services.html" class="btn btn-outline">Explore Services</a>
-            </div>
+        style="background-image: url('assets/img/mechanic-bg.jpg'); height: 100vh; display: flex; align-items: center; position: relative;">
+        <!-- Lighter overlay for better visibility -->
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4)); z-index: 1;">
+        </div>
 
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <h3>24/7</h3>
-                    <p>Urgent Services</p>
+        <div class="container" style="position: relative; z-index: 2; width: 100%;">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <span
+                        style="color: var(--primary-color); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 20px;">Premium
+                        Auto Care</span>
+                    <h1>Driven to Keep <br><span class="text-gradient">You Moving.</span></h1>
+                    <p>Comprehensive diagnostics and both light and heavy mechanical repairs, offering our services at
+                        your
+                        convenience. We come to you or you come to us.</p>
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                        <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+                        <a href="services.html" class="btn btn-outline">Explore Services</a>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <h3>7am-10pm</h3>
-                    <p>Mon - Sat</p>
-                </div>
-                <div class="stat-item">
-                    <h3>500+</h3>
-                    <p>Happy Clients</p>
+
+                <!-- Right Content (Stats Card) -->
+                <div class="hero-card-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="hero-stats-card">
+                        <div class="stat-row">
+                            <div class="stat-icon"><i data-lucide="clock"></i></div>
+                            <div>
+                                <h3>24/7</h3>
+                                <p>Urgent Services</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="stat-row">
+                            <div class="stat-icon"><i data-lucide="calendar"></i></div>
+                            <div>
+                                <h3>7am - 10pm</h3>
+                                <p>Mon - Sat</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="stat-row">
+                            <div class="stat-icon"><i data-lucide="users"></i></div>
+                            <div>
+                                <h3>500+</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div style="margin-top: 20px; text-align: center;">
+                            <p style="font-size: 0.9rem; color: var(--muted-color); margin-bottom: 10px;">Need immediate
+                                help?</p>
+                            <a href="tel:0435868891"
+                                style="color: white; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                <i data-lucide="phone" size="18" style="color: var(--primary-color);"></i> 0435 868 891
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,8 +118,7 @@
 
             <div class="card-grid">
                 <div class="card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=800&auto=format&fit=crop"
-                        alt="Convenience"
+                    <img src="assets/img/convenience.jpg" alt="Mobile Mechanic Van"
                         style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
                     <div class="card-icon"><i data-lucide="map-pin"></i></div>
                     <h3>Convenience at Your Location</h3>
@@ -100,8 +134,7 @@
                         services available.</p>
                 </div>
                 <div class="card" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1549480119-09f1d86d6342?q=80&w=800&auto=format&fit=crop"
-                        alt="Affordable"
+                    <img src="assets/img/affordable.jpg" alt="Affordable Pricing"
                         style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 20px;">
                     <div class="card-icon"><i data-lucide="dollar-sign"></i></div>
                     <h3>Affordable Pricing</h3>
@@ -249,7 +282,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 LD Mobile Mechanic. All rights reserved.</p>
+                <p>&copy; 2026 LD Mobile Mechanic. All rights reserved. | Developed by sixvm</p>
             </div>
         </div>
     </footer>
