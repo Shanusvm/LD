@@ -414,12 +414,33 @@ footer {
         height: auto;
         /* Allow auto height */
         min-height: 100vh;
-        padding: 120px 0 60px;
-        /* More top padding for nav */
+        padding: 160px 0 80px;
+        /* Increased top padding to clear fixed navbar */
+        align-items: flex-start;
+        /* Disable vertical centering to prevent overlap */
+    }
+
+    .hero-grid {
+        display: flex;
+        /* Change grid to flex column */
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        /* Smaller logo on mobile */
     }
 
     .hero h1 {
         font-size: 2.5rem;
+        margin-top: 10px;
     }
 
     .hero p {
@@ -436,12 +457,21 @@ footer {
     .hero-stats-card {
         padding: 20px;
         max-width: 100%;
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding-top: 140px;
+    }
+
     .hero h1 {
         font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 1.1rem;
     }
 
     .process-number {
