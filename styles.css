@@ -301,7 +301,7 @@ a {
 /* Cards */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -392,21 +392,64 @@ footer {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 80%;
+        /* Wider on mobile */
         height: 100vh;
-        background: var(--secondary-color);
+        background: rgba(9, 9, 11, 0.98);
+        /* Less transparent */
+        backdrop-filter: blur(10px);
         flex-direction: column;
         padding: 80px 40px;
         transition: right 0.3s ease;
         z-index: 999;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
     }
 
     .nav-links.active {
         right: 0;
     }
 
+    /* Adjust Hero for Mobile */
+    .hero {
+        height: auto;
+        /* Allow auto height */
+        min-height: 100vh;
+        padding: 120px 0 60px;
+        /* More top padding for nav */
+    }
+
     .hero h1 {
         font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Adjust grids */
+    .card-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+        /* Stack vertically */
+    }
+
+    .hero-stats-card {
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .process-number {
+        font-size: 3rem;
+    }
+
+    .container {
+        padding: 0 20px;
     }
 }
 
