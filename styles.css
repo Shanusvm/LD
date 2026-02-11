@@ -414,8 +414,8 @@ footer {
         height: auto;
         /* Allow auto height */
         min-height: 100vh;
-        padding: 160px 0 80px;
-        /* Increased top padding to clear fixed navbar */
+        padding: 200px 0 80px;
+        /* Increased top padding to clear fixed navbar - FIXED OVERLAP */
         align-items: flex-start;
         /* Disable vertical centering to prevent overlap */
     }
@@ -430,7 +430,7 @@ footer {
     .hero-text {
         text-align: center;
         margin: 0 auto;
-        padding-top: 20px;
+        /* Removed extra top padding here, controlled by hero padding */
     }
 
     .logo {
